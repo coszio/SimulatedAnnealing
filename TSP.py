@@ -83,7 +83,7 @@ class TSP:
                                         connectionstyle="arc3",
                                         color=c))
         # Info box
-        textstr = "N nodes: %d\nTotal length: %.3f" % (self.n_cities, self.fitness(solution))
+        textstr = "N nodes: %d\nN travelers: %d\nTotal length: %.3f" % (self.n_cities,self.n_travelers, self.fitness(solution))
         props = dict(boxstyle='round', facecolor='wheat', alpha=0.5)
         ax[1].text(0.05, 0.95, textstr, transform=ax[1].transAxes, fontsize=9, # Textbox
                 verticalalignment='top', bbox=props)

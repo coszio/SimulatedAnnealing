@@ -51,7 +51,7 @@ class SimAnnealing:
                 accepted += 1
         return accepted / L0
 
-    def init_temp(self, first_temp=0.1, L0=30, expected_p=0.5):
+    def init_temp(self, first_temp=0.1, L0=30, expected_p=0.8):
         p = 0
         self.temperature = first_temp
         while p < expected_p:
